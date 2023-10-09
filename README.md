@@ -1,6 +1,7 @@
-# PMP Chart Tester 
+# PM Chart Tester 
 
-A web-based game to see if you can fill out the PMBOK&reg; 6 process group chart from memory.  Useful as a study aid for the PMP&reg; exam.
+A web-based game to see if you can fill out the *PMBOK&reg; 6 Guide* process group chart from memory.  Useful as a study aid for the PMP&reg; 
+certification exam.
 
 This project is 100% non-commercial, and is strictly something I used to help myself study which seemed it could be useful to other students.
 
