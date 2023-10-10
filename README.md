@@ -11,6 +11,10 @@ PMI&reg;, PMP&reg;, and PMBOK&reg; are registered trademarks of the Project Mana
 
 I am not affiliated with the Project Management Institute.
 
+## Demo
+
+You can find a working version at https://mattriffle.com/pm-chart-tester/
+
 ## License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
