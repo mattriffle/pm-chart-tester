@@ -1,0 +1,90 @@
+/*
+   Part of a package available at https://github.com/mattriffle/pm-chart-tester
+   Copyright (c) 2023 Matthew Riffle
+*/
+body {
+	font-family: -apple-system, Arial, Helvetica, "Open Sans", sans-serif;
+	background: lightgrey;
+	color: black;
+	font-size: 16px;
+}
+
+table {
+	width: 90%;
+	background: white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table,
+td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 3px;
+	font-size: inherit;
+	vertical-align: top;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+input {
+	background: silver;
+	border: none;
+	outline: none;
+	width: 95%;
+}
+
+h1 {
+	text-align: center;
+}
+
+.vcenter {
+	vertical-align: center;
+}
+
+.centered_text {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 95%;
+}
+
+.knowledge_areas {
+	background: darkolivegreen;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.process_groups {
+	background: darkkhaki;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.results_header {
+	background: darkgrey;
+	color: white;
+	text-align: center;
+	font-size: 120%;
+	letter-spacing: 4px;
+}
+
+.congrats {
+	background: darkblue;
+	color: white;
+	text-align: center;
+	font-size: 130%;
+	padding: 5px;
+}
+
+.wrong_answer {
+	background: lightpink;
+}
+
+.wrong_location {
+	background: gold;
+}

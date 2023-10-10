@@ -1,0 +1,283 @@
+<html>
+<!-- See https://github.com/mattriffle/pm-chart-tester for code, license, and details 
+      Copyright (c) 2023 Matthew Riffle -->
+
+<head>
+	<title>PM Chart Tester</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<h1>PM Chart Tester</h1>
+
+	<div class="centered_text">
+		Fill in the chart below to test your knowledge of the <i>PMBOK&reg; 6</i> Process Groups & Knowledge Areas. This is useful for studying for
+		the PMP&reg; certification exam.
+		<p />
+
+		Type an answer into the gray box and hit return. If it's not an answer, it will turn pink and you can try again. If it's a process in the wrong spot, it will turn gold. Processes do not have to be given in any specific order. To restart, simply reload the page. Note that individual answers must be given <i>exactly</i> as shown on the original chart from the guide, including spelling and spacing, but for processes (and only processes) capitalization doesn't matter. Good luck!
+	</div>
+
+	<p />
+
+	<!-- If you're wondering why I don't programatically generate this repetitive table, well... I did.  One time.  No need to take even a single
+	     compute cycle of anyone else for it. -->
+	<table>
+		<tr>
+			<td rowspan="2" class="knowledge_areas"><b>Knowledge Areas</b></td>
+			<td colspan="5" class="process_groups"><b>Project Management Process Groups</b></td>
+		</tr>
+		<tr>
+			<td class="process_groups" id="pg1_cell">
+				<form action="" onsubmit="return check_pg('pg1');"><input id="pg1" type="text"></form>
+			</td>
+			<td class="process_groups" id="pg2_cell">
+				<form action="" onsubmit="return check_pg('pg2');"><input id="pg2" type="text"></form>
+			</td>
+			<td class="process_groups" id="pg3_cell">
+				<form action="" onsubmit="return check_pg('pg3');"><input id="pg3" type="text"></form>
+			</td>
+			<td class="process_groups" id="pg4_cell">
+				<form action="" onsubmit="return check_pg('pg4');"><input id="pg4" type="text"></form>
+			</td>
+			<td class="process_groups" id="pg5_cell">
+				<form action="" onsubmit="return check_pg('pg5');"><input id="pg5" type="text"></form>
+			</td>
+		</tr>
+		<tr>
+			<td class="knowledge_areas" id="ka1_cell">
+				<form action="" onsubmit="return check_ka('ka1');"><input id="ka1" type="text"></form>
+			</td>
+			<td id="ka1_pg1_cell">
+				<form action="" onsubmit="return check_ka_pg('ka1','pg1');"><input id="ka1_pg1" type="text"></form>
+			</td>
+			<td id="ka1_pg2_cell">
+				<form action="" onsubmit="return check_ka_pg('ka1','pg2');"><input id="ka1_pg2" type="text"></form>
+			</td>
+			<td id="ka1_pg3_cell">
+				<form action="" onsubmit="return check_ka_pg('ka1','pg3');"><input id="ka1_pg3" type="text"></form>
+			</td>
+			<td id="ka1_pg4_cell">
+				<form action="" onsubmit="return check_ka_pg('ka1','pg4');"><input id="ka1_pg4" type="text"></form>
+			</td>
+			<td id="ka1_pg5_cell">
+				<form action="" onsubmit="return check_ka_pg('ka1','pg5');"><input id="ka1_pg5" type="text"></form>
+			</td>
+		</tr>
+		<tr>
+			<td class="knowledge_areas" id="ka2_cell">
+				<form action="" onsubmit="return check_ka('ka2');"><input id="ka2" type="text"></form>
+			</td>
+			<td id="ka2_pg1_cell">
+				<form action="" onsubmit="return check_ka_pg('ka2','pg1');"><input id="ka2_pg1" type="text"></form>
+			</td>
+			<td id="ka2_pg2_cell">
+				<form action="" onsubmit="return check_ka_pg('ka2','pg2');"><input id="ka2_pg2" type="text"></form>
+			</td>
+			<td id="ka2_pg3_cell">
+				<form action="" onsubmit="return check_ka_pg('ka2','pg3');"><input id="ka2_pg3" type="text"></form>
+			</td>
+			<td id="ka2_pg4_cell">
+				<form action="" onsubmit="return check_ka_pg('ka2','pg4');"><input id="ka2_pg4" type="text"></form>
+			</td>
+			<td id="ka2_pg5_cell">
+				<form action="" onsubmit="return check_ka_pg('ka2','pg5');"><input id="ka2_pg5" type="text"></form>
+			</td>
+		</tr>
+		<tr>
+			<td class="knowledge_areas" id="ka3_cell">
+				<form action="" onsubmit="return check_ka('ka3');"><input id="ka3" type="text"></form>
+			</td>
+			<td id="ka3_pg1_cell">
+				<form action="" onsubmit="return check_ka_pg('ka3','pg1');"><input id="ka3_pg1" type="text"></form>
+			</td>
+			<td id="ka3_pg2_cell">
+				<form action="" onsubmit="return check_ka_pg('ka3','pg2');"><input id="ka3_pg2" type="text"></form>
+			</td>
+			<td id="ka3_pg3_cell">
+				<form action="" onsubmit="return check_ka_pg('ka3','pg3');"><input id="ka3_pg3" type="text"></form>
+			</td>
+			<td id="ka3_pg4_cell">
+				<form action="" onsubmit="return check_ka_pg('ka3','pg4');"><input id="ka3_pg4" type="text"></form>
+			</td>
+			<td id="ka3_pg5_cell">
+				<form action="" onsubmit="return check_ka_pg('ka3','pg5');"><input id="ka3_pg5" type="text"></form>
+			</td>
+		</tr>
+		<tr>
+			<td class="knowledge_areas" id="ka4_cell">
+				<form action="" onsubmit="return check_ka('ka4');"><input id="ka4" type="text"></form>
+			</td>
+			<td id="ka4_pg1_cell">
+				<form action="" onsubmit="return check_ka_pg('ka4','pg1');"><input id="ka4_pg1" type="text"></form>
+			</td>
+			<td id="ka4_pg2_cell">
+				<form action="" onsubmit="return check_ka_pg('ka4','pg2');"><input id="ka4_pg2" type="text"></form>
+			</td>
+			<td id="ka4_pg3_cell">
+				<form action="" onsubmit="return check_ka_pg('ka4','pg3');"><input id="ka4_pg3" type="text"></form>
+			</td>
+			<td id="ka4_pg4_cell">
+				<form action="" onsubmit="return check_ka_pg('ka4','pg4');"><input id="ka4_pg4" type="text"></form>
+			</td>
+			<td id="ka4_pg5_cell">
+				<form action="" onsubmit="return check_ka_pg('ka4','pg5');"><input id="ka4_pg5" type="text"></form>
+			</td>
+		</tr>
+		<tr>
+			<td class="knowledge_areas" id="ka5_cell">
+				<form action="" onsubmit="return check_ka('ka5');"><input id="ka5" type="text"></form>
+			</td>
+			<td id="ka5_pg1_cell">
+				<form action="" onsubmit="return check_ka_pg('ka5','pg1');"><input id="ka5_pg1" type="text"></form>
+			</td>
+			<td id="ka5_pg2_cell">
+				<form action="" onsubmit="return check_ka_pg('ka5','pg2');"><input id="ka5_pg2" type="text"></form>
+			</td>
+			<td id="ka5_pg3_cell">
+				<form action="" onsubmit="return check_ka_pg('ka5','pg3');"><input id="ka5_pg3" type="text"></form>
+			</td>
+			<td id="ka5_pg4_cell">
+				<form action="" onsubmit="return check_ka_pg('ka5','pg4');"><input id="ka5_pg4" type="text"></form>
+			</td>
+			<td id="ka5_pg5_cell">
+				<form action="" onsubmit="return check_ka_pg('ka5','pg5');"><input id="ka5_pg5" type="text"></form>
+			</td>
+		</tr>
+		<tr>
+			<td class="knowledge_areas" id="ka6_cell">
+				<form action="" onsubmit="return check_ka('ka6');"><input id="ka6" type="text"></form>
+			</td>
+			<td id="ka6_pg1_cell">
+				<form action="" onsubmit="return check_ka_pg('ka6','pg1');"><input id="ka6_pg1" type="text"></form>
+			</td>
+			<td id="ka6_pg2_cell">
+				<form action="" onsubmit="return check_ka_pg('ka6','pg2');"><input id="ka6_pg2" type="text"></form>
+			</td>
+			<td id="ka6_pg3_cell">
+				<form action="" onsubmit="return check_ka_pg('ka6','pg3');"><input id="ka6_pg3" type="text"></form>
+			</td>
+			<td id="ka6_pg4_cell">
+				<form action="" onsubmit="return check_ka_pg('ka6','pg4');"><input id="ka6_pg4" type="text"></form>
+			</td>
+			<td id="ka6_pg5_cell">
+				<form action="" onsubmit="return check_ka_pg('ka6','pg5');"><input id="ka6_pg5" type="text"></form>
+			</td>
+		</tr>
+		<tr>
+			<td class="knowledge_areas" id="ka7_cell">
+				<form action="" onsubmit="return check_ka('ka7');"><input id="ka7" type="text"></form>
+			</td>
+			<td id="ka7_pg1_cell">
+				<form action="" onsubmit="return check_ka_pg('ka7','pg1');"><input id="ka7_pg1" type="text"></form>
+			</td>
+			<td id="ka7_pg2_cell">
+				<form action="" onsubmit="return check_ka_pg('ka7','pg2');"><input id="ka7_pg2" type="text"></form>
+			</td>
+			<td id="ka7_pg3_cell">
+				<form action="" onsubmit="return check_ka_pg('ka7','pg3');"><input id="ka7_pg3" type="text"></form>
+			</td>
+			<td id="ka7_pg4_cell">
+				<form action="" onsubmit="return check_ka_pg('ka7','pg4');"><input id="ka7_pg4" type="text"></form>
+			</td>
+			<td id="ka7_pg5_cell">
+				<form action="" onsubmit="return check_ka_pg('ka7','pg5');"><input id="ka7_pg5" type="text"></form>
+			</td>
+		</tr>
+		<tr>
+			<td class="knowledge_areas" id="ka8_cell">
+				<form action="" onsubmit="return check_ka('ka8');"><input id="ka8" type="text"></form>
+			</td>
+			<td id="ka8_pg1_cell">
+				<form action="" onsubmit="return check_ka_pg('ka8','pg1');"><input id="ka8_pg1" type="text"></form>
+			</td>
+			<td id="ka8_pg2_cell">
+				<form action="" onsubmit="return check_ka_pg('ka8','pg2');"><input id="ka8_pg2" type="text"></form>
+			</td>
+			<td id="ka8_pg3_cell">
+				<form action="" onsubmit="return check_ka_pg('ka8','pg3');"><input id="ka8_pg3" type="text"></form>
+			</td>
+			<td id="ka8_pg4_cell">
+				<form action="" onsubmit="return check_ka_pg('ka8','pg4');"><input id="ka8_pg4" type="text"></form>
+			</td>
+			<td id="ka8_pg5_cell">
+				<form action="" onsubmit="return check_ka_pg('ka8','pg5');"><input id="ka8_pg5" type="text"></form>
+			</td>
+		</tr>
+		<tr>
+			<td class="knowledge_areas" id="ka9_cell">
+				<form action="" onsubmit="return check_ka('ka9');"><input id="ka9" type="text"></form>
+			</td>
+			<td id="ka9_pg1_cell">
+				<form action="" onsubmit="return check_ka_pg('ka9','pg1');"><input id="ka9_pg1" type="text"></form>
+			</td>
+			<td id="ka9_pg2_cell">
+				<form action="" onsubmit="return check_ka_pg('ka9','pg2');"><input id="ka9_pg2" type="text"></form>
+			</td>
+			<td id="ka9_pg3_cell">
+				<form action="" onsubmit="return check_ka_pg('ka9','pg3');"><input id="ka9_pg3" type="text"></form>
+			</td>
+			<td id="ka9_pg4_cell">
+				<form action="" onsubmit="return check_ka_pg('ka9','pg4');"><input id="ka9_pg4" type="text"></form>
+			</td>
+			<td id="ka9_pg5_cell">
+				<form action="" onsubmit="return check_ka_pg('ka9','pg5');"><input id="ka9_pg5" type="text"></form>
+			</td>
+		</tr>
+		<tr>
+			<td class="knowledge_areas" id="ka10_cell">
+				<form action="" onsubmit="return check_ka('ka10');"><input id="ka10" type="text"></form>
+			</td>
+			<td id="ka10_pg1_cell">
+				<form action="" onsubmit="return check_ka_pg('ka10','pg1');"><input id="ka10_pg1" type="text"></form>
+			</td>
+			<td id="ka10_pg2_cell">
+				<form action="" onsubmit="return check_ka_pg('ka10','pg2');"><input id="ka10_pg2" type="text"></form>
+			</td>
+			<td id="ka10_pg3_cell">
+				<form action="" onsubmit="return check_ka_pg('ka10','pg3');"><input id="ka10_pg3" type="text"></form>
+			</td>
+			<td id="ka10_pg4_cell">
+				<form action="" onsubmit="return check_ka_pg('ka10','pg4');"><input id="ka10_pg4" type="text"></form>
+			</td>
+			<td id="ka10_pg5_cell">
+				<form action="" onsubmit="return check_ka_pg('ka10','pg5');"><input id="ka10_pg5" type="text"></form>
+			</td>
+		</tr>
+	</table>
+	<br />
+	<table id="results">
+		<tr>
+			<td class="results_header" colspan="3"><b>RESULTS</b></td>
+		</tr>
+		<tr>
+			<td class="knowledge_areas" style="text-align: left">
+				Knowledge Areas: <span id="ka_results"></span>
+			</td>
+			<td class="process_groups" style="text-align: center">
+				Process Groups: <span id="pg_results"></span>
+			</td>
+			<td style="text-align: right">
+				Processes: <span id="pr_results"></span>
+			</td>
+		</tr>
+	</table>
+	<div id="congrats_box" class="centered_text">
+		<span id="congrats_text" class="congrats" style="display:none"></span>
+	</div>
+	<p />
+	<div class="centered_text">
+		This script is open source and provided completely free of charge. Find the code <a href="https://github.com/mattriffle/pm-chart-tester" target="_blank">here</a>. It
+		is intended strictly for studying for the PMP&reg; certification exam.
+		<p />
+
+		PMP&reg; and <i>PMBOK&reg;</i> are registered trademarks of the Project Management Institute. This project is not affiliated in any way with the PMI.
+		If you do not own a copy of the <i>PMBOK&reg;</i> find a retailer to purchase one <a href="https://www.pmi.org/help-marketplace/books-and-pmi-logo-items-help" target="_blank">here</a>.
+	</div>
+
+	<script type="text/javascript" src="js/pm-chart-tester.js"></script>
+</body>
+
+</html>
